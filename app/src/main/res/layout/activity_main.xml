@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fiften"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="Name : "/>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:hint="Jony"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="Gender: "
+
+
+                />
+            <RadioGroup
+                android:id="@+id/gendergroup"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="30dp"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:textSize="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height :"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                />
+
+
+            <EditText
+                android:id="@+id/feetET_id"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:inputType="number"
+
+                android:hint="5 feet"
+                android:padding="10dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/inchesET_id"
+                android:layout_width="110dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:hint="8 Inches"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight :"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                />
+
+            <EditText
+                android:id="@+id/weightET_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:hint="70 Kg"
+                android:inputType="number"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age :"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                />
+
+            <EditText
+                android:id="@+id/ageET_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:inputType="number"
+                android:hint="23 Year"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+
+            >
+
+            <Button
+                android:id="@+id/testButton_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI Test"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/restButton_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="false"/>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resultTextView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
